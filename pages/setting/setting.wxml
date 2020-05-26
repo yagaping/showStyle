@@ -1,0 +1,22 @@
+<!--pages/setting/setting.wxml-->
+<view class="main">
+  <view class="item">
+    <view class="text"><text>接受通知</text><text style="color:#666">已开启</text></view>
+    <view class="icon">
+      <icon class="iconfont icon-right"></icon>
+    </view>
+  </view> 
+  <view class="tips">开启或关闭推送通知，需要去iPhone系统设置-通知中设置</view>
+  <view class="item itemLine" bindtap='tipsEvent'>
+    <view class="text"><text>非Wi-Fi网络播放提示</text><text style="color:#666">{{tips}}</text></view>
+    <view class="icon">
+      <icon class="iconfont icon-right"></icon>
+    </view>
+  </view> 
+  <view class="item" bindtap='clearCache'>
+    <view class="text"><text>清空缓存</text><text style="color:#666">{{cache}}</text></view>
+    <view class="icon">
+      <icon class="iconfont icon-right"></icon>
+    </view>
+  </view> 
+</view>

@@ -1,0 +1,47 @@
+/* pages/feedback/feedback.wxss */
+.main{
+  overflow: hidden
+}
+.information{
+  padding:30rpx 0 0;
+  overflow: hidden;
+}
+.describe{
+  height: 360rpx;
+  background: #fff;
+  padding:10rpx 30rpx;
+  border-bottom: 1px solid #f1f1f1;
+}
+.placeholder{
+  font-size:24rpx;
+}
+.describe textarea{
+  height: 100%;
+  width: 100%;
+  display: block;
+  line-height: 46rpx;
+}
+.information .tel{
+  background: #fff;
+  height: 80rpx;
+  padding:0 30rpx;
+}
+.information .tel input{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.submit{
+  padding:30rpx;
+}
+.submit button{
+  background: #f2842b;
+  color:#fff;
+  height:80rpx;
+  line-height: 80rpx;
+  font-size:28rpx;
+}
+.tips{
+  padding:0 30rpx;
+  font-size:22rpx;
+  color:#999;
+}

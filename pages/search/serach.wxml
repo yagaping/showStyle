@@ -1,0 +1,29 @@
+<!--pages/search/serach.wxml-->
+<import src="../../template/list/list.wxml" />
+<view class="main">
+  <view class="search">
+    <view class="can">
+      <view class="ico_s">
+        <icon type="search" size="16"></icon>
+      </view>
+      <input placeholder="输入应用游戏关键字" value='{{searchTxt}}' placeholder-style='color:#999' bindfocus="onFocus" bindinput="onInput" confirm-type="search" bindconfirm="onSearch" />
+      <view class="ico_x" wx:if="{{isClear}}" bindtap='onClear'>
+        <icon type="clear" size="16"></icon>
+      </view>
+    </view>
+    <view class="cancel" wx:if="{{isCancle}}" bindtap='onCancel'>取消</view>
+  </view>
+  <view class="content">
+    <view class="history" wx:if="{{history}}">
+      <view class="tit">热门搜索</view>
+      <view class="info">
+        <view wx:for="{{types}}" wx:key="index" class="text {{index==1||index==5||index==10||index==14?'hot':''}}" data-value="{{item}}" bindtap='historyBtn'>
+          {{item}}
+        </view>
+      </view>
+    </view>
+    <view class="searchList" wx:if="{{!history&&searchList}}">
+      <template is="list" data="{{list,loading,installBtn,icoType}}"></template>
+    </view>
+  </view>
+</view>

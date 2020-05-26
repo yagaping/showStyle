@@ -1,0 +1,75 @@
+<template name="feature_1">
+  <view class="ul" id="ul">
+    <view class="li" bindtap="{{clickEvent}}" data-name="aa">
+      <view class="icon">
+        <icon class="iconfont icon-evaluate"></icon>
+      </view>
+      <view class="name">淘宝票电影</view>
+    </view>
+    <view class="li" bindtap="{{clickEvent}}" data-name="bb">
+      <view class="icon">
+        <icon class="iconfont icon-fire"></icon>
+      </view>
+      <view class="name">超市</view>
+    </view>
+    <view class="li" bindtap="{{clickEvent}}" data-name="cc">
+      <view class="icon">
+        <icon class="iconfont icon-xihuan"></icon>
+      </view>
+      <view class="name">运动健身</view>
+    </view>
+    <view class="li" bindtap="{{clickEvent}}" data-name="dd">
+      <view class="icon">
+        <icon class="iconfont icon-liwu"></icon>
+      </view>
+      <view class="name">热门商圈</view>
+    </view>
+    <view class="li" bindtap="{{clickEvent}}" data-name="ee">
+      <view class="icon">
+        <icon class="iconfont icon-hehu"></icon>
+      </view>
+      <view class="name">摄影</view>
+    </view>
+    <view class="li" bindtap="{{clickEvent}}" data-name="aa">
+      <view class="icon">
+        <icon class="iconfont icon-tizhong"></icon>
+      </view>
+      <view class="name">休闲娱乐</view>
+    </view>
+    <view class="li" bindtap="{{clickEvent}}" data-name="bb">
+      <view class="icon">
+        <icon class="iconfont icon-dizhi"></icon>
+      </view>
+      <view class="name">KTV</view>
+    </view>
+    <view class="li" bindtap="{{clickEvent}}" data-name="cc">
+      <view class="icon">
+        <icon class="iconfont icon-camera"></icon>
+      </view>
+      <view class="name">丽人/美发</view>
+    </view>
+    <view class="li" bindtap="{{clickEvent}}" data-name="dd">
+      <view class="icon">
+        <icon class="iconfont icon-xiaoxi"></icon>
+      </view>
+      <view class="name">结婚</view>
+    </view>
+    <view class="li" bindtap="{{clickEvent}}" data-name="ee">
+      <view class="icon">
+        <icon class="iconfont icon-earth"></icon>
+      </view>
+      <view class="name">全部</view>
+    </view>
+  </view>
+</template>
+
+<template name="feature_2">
+  <view class="ul">
+    <view class="li" bindtap="{{clickEvent}}" data-name="55">
+      <view class="icon">
+        <icon class="iconfont icon-yundong "></icon>
+      </view>
+      <view class="name">运动</view>
+    </view>
+  </view>
+</template>

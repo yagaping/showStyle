@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/search/serach",
+    "pages/apps/apps",
+    "pages/life/life",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/result/result",
+    "pages/detail/detail",
+    "pages/setting/setting",
+    "pages/account/account",
+    "pages/feedback/feedback",
+    "pages/aboutus/aboutus",
+    "pages/agrement/agrement",
+    "pages/user/user",
+    "pages/test/test"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "show影",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#4c4c4e",
+    "selectedColor": "#f5832a",
+    "position": "bottom",
+    "borderStyle": "white",
+    "backgroundColor": "#fefeff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./resources/m1.png",
+        "selectedIconPath": "./resources/m1-a.png"
+      },
+      {
+        "pagePath": "pages/apps/apps",
+        "text": "应用",
+        "iconPath": "./resources/m2.png",
+        "selectedIconPath": "./resources/m2-b.png"
+      },
+      {
+        "pagePath": "pages/life/life",
+        "text": "生活",
+        "iconPath": "./resources/m3.png",
+        "selectedIconPath": "./resources/m3-c.png"
+      },
+      {
+        "pagePath": "pages/search/serach",
+        "text": "搜索",
+        "iconPath": "./resources/m4.png",
+        "selectedIconPath": "./resources/m4-d.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./resources/m5.png",
+        "selectedIconPath": "./resources/m5-e.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

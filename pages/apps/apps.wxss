@@ -1,0 +1,84 @@
+/* pages/showList/showList.wxss */
+@import '../../template/list/list.wxss';
+.main{
+  overflow: hidden;
+}
+.main .h-top{
+  background: #ee8733;
+  overflow: hidden;
+  display: flex;
+  padding:60rpx 40rpx 0;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:10
+}
+.main .h-top .text{
+  padding:12rpx 0;
+}
+.main .h-top .text.selectd{
+  border-radius: 7rpx;
+  background: rgba(228, 176, 134, 0.3686274509803922);
+}
+.main .h-top .tab{
+  color:#Fff;
+  flex:1;
+  text-align: center;
+  font-size:28rpx;
+  padding:20rpx 0;
+}
+.main .type{
+  overflow: hidden;
+  display: flex;
+  background: #fff;
+  padding:20rpx 0;
+}
+.main .type .item{
+  flex:1;
+}
+.main .type .item image{
+  width:84rpx;
+  height: 84rpx;
+  display: block;
+  margin: 0 auto;
+}
+.main .type .item .text{
+  text-align: center;
+  font-size:26rpx;
+  line-height: 1.6;
+  padding-top:10rpx;
+}
+.content{
+  padding-top:20rpx;
+  overflow: hidden;
+}
+.page{
+  padding-top:160rpx;
+}
+.classify{
+  overflow: hidden
+}
+.classify .item{
+  overflow: hidden;
+  background: #fff;
+}
+.classify .item .col{
+  width: 25%;
+  float: left;
+  height: 100px;
+}
+.classify .item .col image{
+  width:56rpx;
+  height: 56rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top:35rpx;
+}
+.classify .item .col .text{
+  text-align: center;
+  font-size:22rpx;
+  color:#999;
+  line-height: 1.6;
+  padding-top:10rpx;
+}

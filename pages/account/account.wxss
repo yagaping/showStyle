@@ -1,0 +1,53 @@
+/* pages/account/account.wxss */
+@import '../../template/alert/alert.wxss';
+page{
+  background-color:#f0f0f1; 
+}
+.main{
+  overflow: hidden;
+  padding-top:30rpx;
+}
+.main .item{
+  display: flex;
+  height: 80rpx;
+  background: #fff;
+  align-items: center;
+  padding:0 20rpx;
+  font-size:26rpx;
+}
+.main .itemLine{
+  position: relative;
+}
+.main .itemLine:before{
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  left:20rpx;
+  bottom:0;
+  height: 1px;
+  background: #ddd;
+  width:100%;
+}
+.main .item .text{
+  flex:1;
+  display: flex;
+  justify-content: space-between;
+}
+.main .item .iconfont{
+  font-size:34rpx;
+  margin-top:-4rpx;
+  color:#bbb;
+}
+.main .tips{
+  color:#808080;
+  font-size:24rpx;
+  padding:20rpx 20rpx 50rpx;
+}
+.logOut{
+  height: 80rpx;
+  background: #fff;
+  text-align: center;
+  font-size:26rpx;
+  color:red;
+  line-height: 80rpx;
+}

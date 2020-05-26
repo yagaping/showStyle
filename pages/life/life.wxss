@@ -1,0 +1,248 @@
+/* pages/health/health.wxss */
+@import "../../template/feature/feature.wxss";
+.main{
+  overflow: hidden;
+}
+.content{
+  overflow: hidden;
+  padding:30rpx 0;
+}
+.more{
+  position: relative;
+  overflow: hidden;
+  padding-bottom:30rpx;
+  background: #Fff;
+}
+.more .liner{
+  position: absolute;
+  width: 100%;
+  bottom: 20rpx;
+  left:0;
+  right:0;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.more .liner .tag{
+  width: 20rpx;
+  height: 5rpx;
+  background:rgba(0, 0, 0,.1);
+}
+.more .liner .tag.act{
+  background: #ed7d32;
+}
+.special{
+  overflow: hidden;
+  margin-top:30rpx;
+  background: #fff;
+  padding:0 15rpx;
+}
+.special .spe_tit{
+  font-size:36rpx;
+  padding:20rpx 0 10rpx;
+}
+.special .spe_info{
+  display: flex;
+  padding:20rpx 0;
+}
+.special .zt{
+  flex:1;
+  padding:0 5rpx;
+}
+.special .zt image{
+  width:100%;
+  height: 50px;
+  display: block;
+  border-radius: 7rpx;
+}
+.adv{
+  padding:20rpx;
+  margin-top:30rpx;
+  background: #fff;
+}
+.hot{
+  background: #fff;
+  margin-top:30rpx;
+  padding:20rpx 15rpx 0;
+}
+ .tit{
+  display: flex;
+  justify-content: space-between;
+}
+.tit .tit_l{
+  font-size:36rpx;
+  letter-spacing: 3rpx;
+}
+.tit .tit_l text{
+  font-size:22rpx;
+  color:#999;
+}
+.tit .tit_r{
+  font-size:26rpx;
+  color:#999;
+}
+.hot .info{
+  padding:30rpx 0; 
+  overflow: hidden
+}
+.hot .info .child{
+  width:33.33%;
+  float:left;
+  padding:0 5rpx;
+  box-sizing: border-box;
+  font-size:28rpx;
+}
+.hot .info .child image{
+  width:100%;
+  height: 170rpx;
+  display: block;
+  border-radius: 7rpx;
+}
+.hot .info .child .wd{
+  overflow: hidden;
+  line-height: 48rpx;
+  padding-top:10rpx;
+}
+.hot .info .child .wd .t_1{
+  font-weight:bold;
+}
+.hot .info .child .wd .t_2{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+.hot .info .child .wd .t_3{
+  color:red;
+  font-weight: bold;
+}
+.hot .info .child .wd .t_3 text{
+  color:#b3b3b3;
+  font-size:24rpx;
+  font-weight: normal;
+  text-decoration:line-through;
+}
+.recom{
+  overflow: hidden;
+  background: #fff;
+  margin-top:30rpx;
+  padding:20rpx 15rpx;
+}
+.tit .tit_r .icoMore{
+  height: 20px;
+  width:90px;
+  vertical-align:-3px;
+}
+.recom .info{
+  display: flex;
+  overflow: hidden;
+  padding:30rpx 0 0;
+}
+.recom .info2{
+  padding:10rpx 0 0;
+  margin:0 -5rpx;
+}
+.recom .info .big{
+  width: 66.66%;
+  float: left;
+}
+.recom .info .big image{
+  width: 100%;
+  display: block;
+  height: 320rpx;
+  border-radius: 7rpx;
+}
+.recom .info .small{
+  width: 33.33%;
+  float: left;
+}
+.recom .info .small .can{
+  padding-left:10rpx;
+  font-size:26rpx;
+  line-height: 1.5;
+}
+.recom .info .small .can image{
+  width: 100%;
+  height: 196rpx;
+  display: block;
+  border-radius:7rpx;
+}
+.recom .info .small .can .t1{
+  font-weight: bold;
+  padding-top:6rpx;
+}
+.recom .info .small .can .t2{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.recom .info .small .can .price{
+  color:red;
+  font-weight: bold;
+}
+.recom .info .small.child .can{
+  padding:0 5rpx;
+}
+
+.recom .info .small.child .can .price text{
+  color:#999;
+  font-size:22rpx;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+.nearby{
+  padding:30rpx 15rpx 0;
+}
+.nearby .list{
+  overflow: hidden
+}
+.nearby .list .item{
+  overflow: hidden;
+  background: #fff;
+  padding:20rpx;
+  border-radius: 11rpx;
+  margin-top:20rpx;
+}
+.nearby .list .item .img{
+  height: 180rpx;
+  width: 200rpx;
+  float: left;
+  border-radius: 9rpx;
+}
+.nearby .list .item .text{
+  margin-left:220rpx;
+  overflow: hidden;
+  font-size:28rpx;
+  line-height: 1.6;
+  color: #999;
+}
+.nearby .list .item .text .tit{
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  color:#333;
+}
+.nearby .list .item .text .pop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nearby .list .item .text .pop .rq{
+  color:red;
+  font-size:24rpx;
+  font-weight: bold;
+}
+.nearby .list .item .text .pop .jl{
+  color:#999;
+}
+.nearby .list .item .text .type text{
+  display: inline-block;
+  border:1px solid #ddd;
+  color:#999;
+  margin-right: 10rpx;
+  line-height: 1;
+  padding:8rpx;
+  border-radius:7rpx;
+  font-size:22rpx;
+}

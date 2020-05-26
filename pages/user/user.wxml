@@ -1,0 +1,82 @@
+<!--pages/user/user.wxml-->
+<view class='main'>
+  <view class='feature'>
+    <view class="item" bindtap='changeHead'>
+      <view class="text">
+        <view class="dic">头像</view>
+        <view class="mod">
+          <image src="{{hdUrl}}" mode='aspectFill'></image>
+        </view>
+      </view>
+      <view class="icon">
+        <icon class="iconfont icon-right"></icon>
+      </view>
+    </view>
+    <view class="item">
+      <view class="text">
+        <view class="dic">昵称</view>
+        <view class="mod">
+          <input placeholder="未设置" placeholder-class='placeholder' value='{{nickname}}' maxlength="16" bindinput="inputName" bindblur="inputBlur" bindfocus="inputFocus" />
+          <icon class="iconfont icon-close-circle-fill" bindtap='clearName' wx:if="{{clearBtn}}"></icon>
+        </view>
+      </view>
+      <view class="icon">
+        <icon class="iconfont icon-right"></icon>
+      </view>
+    </view>
+    <view class="item last">
+      <view class="text">
+        <view class="dic">个性签名</view>
+        <view class="mod" style='color:#999'>
+          JT
+        </view>
+      </view>
+      <view class="icon">
+        <icon class="iconfont icon-right"></icon>
+      </view>
+    </view>
+  </view>
+  <view class='feature'>
+    <picker mode="date" value="{{time}}" start="1900-01-01" end="2099-01-01" bindchange="bindDateChange">
+      <view class="item">
+        <view class="text">
+          <view class="dic">生日</view>
+          <view class="mod">
+            {{time}}
+          </view>
+        </view>
+        <view class="icon">
+          <icon class="iconfont icon-right"></icon>
+        </view>
+      </view>
+    </picker>
+    <picker bindchange="sexChange" value="{{sex}}" range="{{sexArray}}">
+      <view class="item">
+        <view class="text">
+          <view class="dic">性别</view>
+          <view class="mod">
+            {{sexArray[sex]}}
+          </view>
+        </view>
+        <view class="icon">
+          <icon class="iconfont icon-right"></icon>
+        </view>
+      </view>
+    </picker>
+    <picker mode="region" bindchange="addressChange" value="{{region}}">
+      <view class="item last">
+        <view class="text">
+          <view class="dic">所在地</view>
+          <view class="mod">
+            {{region[0]+' '+region[1]+' '+region[2]}}
+          </view>
+        </view>
+        <view class="icon">
+          <icon class="iconfont icon-right"></icon>
+        </view>
+      </view>
+    </picker>
+  </view>
+
+
+</view>

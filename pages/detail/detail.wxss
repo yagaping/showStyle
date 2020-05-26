@@ -1,0 +1,75 @@
+/* pages/detail/detail.wxss */
+page{
+  background: #fff;
+}
+.main{
+  overflow: hidden;
+}
+.detail{
+  overflow: hidden;
+}
+.detail .top{
+  padding:0 30rpx;
+}
+.detail .top .logo{
+  width:180rpx;
+  height: 180rpx;
+  display: block;
+  float:left;
+}
+.detail .top .info{
+  padding-left:210rpx;
+  line-height: 1.5;
+  padding-top:10rpx;
+  padding-bottom:40rpx;
+  border-bottom:1px solid #eee;
+}
+.detail .top .info .title{
+  font-size:34rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.detail .top .info .vs{
+  font-size:24rpx;
+  color:#aaa;
+  line-height: 1.4;
+}
+.detail .top .info .vs text{
+  display: inline-block;
+  margin-right:10rpx;
+  vertical-align: middle;
+}
+.detail .top .info .vs text.point{
+  background: #aaa;
+  width:8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+}
+.detail .top .info .size{
+  font-size:24rpx;
+  color:#777;
+}
+.detail .top .info .size text{
+  display: inline-block;margin-right:8rpx;
+  font-size:20rpx;
+}
+.detail .top .info .score{
+  font-size:30rpx;
+  color:#666;
+}
+.detail .menu{
+  display: flex;
+  border-bottom:15rpx solid #eee;
+}
+.detail .menu .tab{
+ flex:1;
+ text-align: center;
+ height: 88rpx;
+ line-height: 88rpx;
+}
+.detail .menu .tab.select{
+  font-weight: bold;
+  color:#236ee7;
+  position: relative;
+}

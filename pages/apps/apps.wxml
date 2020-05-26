@@ -1,0 +1,71 @@
+<!--pages/showList/showList.wxml-->
+<import src="../../template/list/list.wxml" />
+<view class="main">
+  <view class="h-top">
+    <view class="tab" data-current="{{0}}" bindtap='switchTab'>
+      <view class="text {{current==0?'selectd':''}}">推荐</view>
+    </view>
+    <view class="tab" data-current="{{1}}" bindtap='switchTab'>
+      <view class="text {{current==1?'selectd':''}}">排行</view>
+    </view>
+    <view class="tab" data-current="{{2}}" bindtap='switchTab'>
+      <view class="text {{current==2?'selectd':''}}">最新</view>
+    </view>
+    <view class="tab" data-current="{{3}}" bindtap='switchTab'>
+      <view class="text {{current==3?'selectd':''}}">分类</view>
+    </view>
+  </view>
+  <view class="page">
+    <swiper style="height:{{swiperHeight}}px" current="{{current}}" bindanimationfinish="swiperChange">
+      <swiper-item>
+        <scroll-view scroll-y style="height:{{swiperHeight}}px" enable-back-to-top bindscrolltolower="pageScroll">
+          <view class="type">
+            <view class='item'>
+              <image src="http://d.image.i4.cn/i4_jqb/bannerMenuItem/12x.png"></image>
+              <view class="text">省钱安装</view>
+            </view>
+            <view class='item'>
+              <image src="http://d.image.i4.cn/i4_jqb/bannerMenuItem/22x.png"></image>
+              <view class="text">限时免费</view>
+            </view>
+            <view class='item'>
+              <image src="http://d.image.i4.cn/i4_jqb/bannerMenuItem/32x.png"></image>
+              <view class="text">装机必备</view>
+            </view>
+            <view class='item'>
+              <image src="http://d.image.i4.cn/i4_jqb/bannerMenuItem/42x.png"></image>
+              <view class="text">应用专题</view>
+            </view>
+          </view>
+          <view class="content">
+            <template is="list" data="{{list,loading,installBtn,icoType}}"></template>
+          </view>
+        </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        <scroll-view scroll-y style="height:{{swiperHeight}}px" enable-back-to-top bindscrolltolower="pageScroll">
+          <view class="content">
+            <template is="list" data="{{list,loading,installBtn,icoType}}"></template>
+          </view>
+        </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        <scroll-view scroll-y style="height:{{swiperHeight}}px" enable-back-to-top bindscrolltolower="pageScroll">
+          <view class="content">
+            <template is="list" data="{{list,loading,installBtn,icoType}}"></template>
+          </view>
+        </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        <view class="classify">
+          <view class="item" style="background:#fff url('../../resources/category_list_1px.png');">
+            <view class="col" wx:for="{{classify}}" wx:key="index">
+              <image src="{{item.url}}"></image>
+              <view class="text">{{item.name}}</view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

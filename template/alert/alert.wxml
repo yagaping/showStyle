@@ -1,0 +1,14 @@
+<!--template/alert/alert.wxml-->
+<template name="alert">
+  <view style="display:{{bool?'block':'none'}}">
+    <view class="mask" bindtap='hideAlert'></view>
+    <view class="alert" bindtap='{{clickAlert}}' style="width:{{width}}rpx;margin-left:-{{width/2}}rpx">
+      <view class="a_title">{{title}}</view>
+      <view class="a_tel">
+        自定义模板弹框
+      </view>
+      <view class="a_btn"></view>
+    </view>
+  </view>
+</template>
+

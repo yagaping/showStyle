@@ -1,0 +1,77 @@
+.list .item{
+  background: #fefefe;
+  border-bottom:1px solid #eee;
+  position: relative;
+  overflow: hidden;
+  padding:30rpx 20rpx;
+}
+.list .item .app_logo{
+  width:120rpx;
+  height: 120rpx;
+  display: block;
+  float: left;
+}
+.list .item .app_des{
+  padding:0 173rpx 0 140rpx;
+  line-height: 1.6;
+  padding-top:5rpx;
+}
+.list .item .app_des .name{
+  font-size:26rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list .item .app_des .down{
+  font-size:22rpx;
+  color:#aaa;
+}
+.list .item .app_des .down text{
+  padding-right:8rpx;
+  display: inline-block;
+}
+.list .item .app_des .des{
+font-size:22rpx;
+  color:#aaa;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list .item .todo{
+  position: absolute;
+  top:60rpx;
+  right:20rpx;
+  display: flex;
+}
+.list .item .todo .bz{
+  display: flex;
+  align-items: center;
+  padding-right:5rpx
+}
+.list .item .todo .bz image{
+  width: 14px;
+  height: 14px;
+  display: block;
+  margin-right:10rpx;
+}
+.list .item .todo .btn{
+  width: 110rpx;
+  font-size:22rpx;
+}
+.list .item .todo .btn button{
+  font-size:24rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  border:1px solid #ee8733;
+  color:#ee8733;
+  background: #fefefe;
+}
+.list .item .todo .btn button.has{
+  color:#fff;
+  background: #ee8733;
+}
+.loading{
+  text-align: center;
+  padding:20rpx 0;
+  font-size:24rpx;
+}

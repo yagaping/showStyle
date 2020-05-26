@@ -1,0 +1,27 @@
+<template name="list">
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="index">
+      <navigator url="/pages/detail/detail?id={{item.id}}" hover-class='none'>
+        <image src="{{item.url}}" class="app_logo"></image>
+        <view class="app_des">
+          <view class="name">{{item.name}}</view>
+          <view class="down"><text>{{item.down}}万次</text><text>|</text><text>{{item.size}}MB</text></view>
+          <view class="des">{{item.describe}}</view>
+        </view>
+        <view class="todo">
+          <view class="bz">
+            <image src="{{item.i4?icoType.i4:icoType.i4_2}}" mode='aspectFit'></image>
+            <image src="{{item.appstroe?icoType.as:icoType.as_2}}" mode='aspectFit'></image>
+          </view>
+          <view class="btn">
+            <button wx:if="{{item.install==0}}" catchtap ='{{installBtn}}' data-type='{{0}}'>安装</button>
+            <button wx:else class="has" catchtap ='{{installBtn}}' data-type='{{1}}'>已装</button>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class="loading" wx:if="{{loading}}">
+      加载更多...
+    </view>
+  </view>
+</template>  

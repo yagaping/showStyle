@@ -1,0 +1,13 @@
+/* pages/aggrement/aggrement.wxss */
+.main{
+  padding:30rpx;
+  font-size:24rpx;
+}
+.main .p{
+  padding:20rpx 0;
+  line-height: 40rpx;
+}
+.main .h3{
+  font-size:36rpx;
+  padding-bottom:15rpx;
+}

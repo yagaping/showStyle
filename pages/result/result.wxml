@@ -1,0 +1,5 @@
+<!--pages/result/result.wxml-->
+<view class="type">
+  <view>扫码类型：{{type}}</view>
+  <view>扫码内容：{{result}}</view>
+</view>

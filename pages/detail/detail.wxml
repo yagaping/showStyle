@@ -1,0 +1,36 @@
+<view class="main">
+  <view class="detail">
+    <view class="top">
+      <image src='{{item.url}}' class="logo"></image>
+      <view class="info">
+        <view class="title">{{item.name}}</view>
+        <view class="vs">
+          <text>版本号：1.2.3</text><text class="point"></text><text>2019-01-01更新</text>
+        </view>
+        <view class="size">
+          <text>{{item.size}}MB</text><text>|</text><text>{{down}}万次安装</text>
+        </view>
+        <view class="score">评分：9.0</view>
+      </view>
+    </view>
+    <view class="menu">
+      <view class="tab {{current==0?'select':''}}" data-current="0" bindtap='switchTab'>
+        详情
+      </view>
+      <view class="tab {{current==1?'select':''}}" data-current='1' bindtap='switchTab'>
+        评价
+      </view>
+    </view>
+      <swiper
+      current="{{current}}"
+      bindanimationfinish="scrollTab"
+      >
+        <swiper-item>
+          这里是详情内容
+        </swiper-item>
+        <swiper-item>
+          这里是评价内容
+        </swiper-item>
+    </swiper>
+  </view>
+</view>

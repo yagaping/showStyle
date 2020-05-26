@@ -1,0 +1,78 @@
+<!--pages/me/me.wxml-->
+<view class="main">
+  <view class="hdbg" style='background-image:url({{imgs.i10}})'>
+    <view class="btn_photo" bindtap='takePhoto'>
+      <icon class="iconfont icon-camera"></icon>
+    </view>
+    <view class="btn_set" bindtap='setting'>
+      <icon class="iconfont icon-setup"></icon>
+    </view>
+    <view class="person">
+      <view class="head" bindtap='user'>
+        <image src="{{imgs.head}}"></image>
+      </view>
+      <view class='name'>empyrean</view>
+    </view>
+  </view>
+  <view class="feature">
+    <view class="item" bindtap='account'>
+      <view class="icon">
+        <icon class="iconfont icon-safetycertificate"></icon>
+      </view>
+      <view class="text">账户安全</view>
+      <view class="icon">
+        <icon class="iconfont icon-right"></icon>
+      </view>
+    </view>
+    <view class="item last" bindtap='setting'>
+      <view class="icon">
+        <icon class="iconfont icon-setup"></icon>
+      </view>
+      <view class="text">通用设置</view>
+      <view class="icon">
+        <icon class="iconfont icon-right"></icon>
+      </view>
+    </view>
+    <view class="item" bindtap='share'>
+      <view class="icon">
+        <icon class="iconfont icon-share"></icon>
+      </view>
+      <view class="text">邀请好友</view>
+      <view class="icon">
+        <icon class="iconfont icon-right"></icon>
+      </view>
+    </view>
+    <view class="item">
+      <view class="icon">
+        <icon class="iconfont icon-evaluate"></icon>
+      </view>
+      <view class="text">好评支持</view>
+      <view class="icon">
+        <icon class="iconfont icon-right"></icon>
+      </view>
+    </view>
+    <view class="item last" bindtap='feedback'>
+      <view class="icon">
+        <icon class="iconfont icon-setup"></icon>
+      </view>
+      <view class="text">问题反馈</view>
+      <view class="icon">
+        <icon class="iconfont icon-right"></icon>
+      </view>
+    </view>
+    <view class="item last" bindtap='aboutus'>
+      <view class="icon">
+        <icon class="iconfont icon-prompt"></icon>
+      </view>
+      <view class="text flex">
+        <text>关于我们</text>
+        <text style="font-size:26rpx;color:#696969">2.6.3</text>
+      </view>
+      <view class="icon">
+        <icon class="iconfont icon-right"></icon>
+      </view>
+    </view>
+  </view>
+  <view class="sharre_mark" wx:if="{{shareBool}}" bindtap='hideShare'></view>
+  <view class="share" animation="{{animationData}}">自定义动画</view>
+</view>

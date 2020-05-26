@@ -1,0 +1,74 @@
+/* pages/user/user.wxss */
+.main{
+  overflow: hidden;
+  padding:30rpx 0 0;
+}
+.feature{
+  overflow: hidden;
+}
+.main .item{
+  display: flex;
+  align-items:center; 
+  justify-items: center;
+  height:80rpx;
+  line-height: 80rpx;
+  padding-left:15rpx;
+  background: #fff;
+  position: relative;
+  }
+.main .item:before{
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #e7e7e7;
+  content: "";
+  clear: both;
+  bottom:0;
+  left:15rpx;
+  overflow: hidden;
+}
+.main .item.last{
+  border-bottom:none;
+  margin-bottom:30rpx;
+}
+.main .item.last:before{
+  height:0;
+}
+.flex{
+  display: flex;
+  justify-content : space-between;
+}
+.main .item .text{
+  flex:1;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+.main .item .text .mod{
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  padding-right:6rpx;
+}
+.main .item .text .mod image{
+  width:60rpx;
+  height: 60rpx;
+  display: block;
+  border-radius: 50%;
+}
+.main .item .text .mod input{
+  text-align: right;
+}
+.main .item .text .mod .iconfont{
+  margin-left:5rpx;
+}
+.icon{
+  padding:0 10rpx 0 0;
+}
+.feature .iconfont{
+  font-size:30rpx;
+  color:#ddd;
+  margin-top:5rpx;
+}

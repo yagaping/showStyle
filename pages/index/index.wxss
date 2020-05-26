@@ -1,0 +1,34 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+/* by empyrean 1-1*/
+.number{
+  display: flex;
+}
+.num_1{
+  flex:1;
+  font-size:22rpx;
+  padding-left:10rpx;
+}
+.num_1:last-child{
+  padding-left:0;
+}

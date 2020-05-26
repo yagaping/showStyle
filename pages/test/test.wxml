@@ -1,0 +1,55 @@
+<view class="main">
+  <view class="item">
+    <view class="dic">扫一扫</view>
+    <view class="info">
+      <button type="primary" bindtap='code'>扫码</button>
+    </view>
+    <view class="content" wx:if="{{codeObj}}">
+      <view wx:for="{{codeObj}}" wx:key="index">{{item}}</view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="dic">手机震动15ms</view>
+    <view class="info">
+      <button type="primary" bindtap='shake' data-type='15'>使手机震动</button>
+    </view>
+  </view>
+  <view class="item">
+    <view class="dic">手机震动400ms</view>
+    <view class="info">
+      <button type="primary" bindtap='shake' data-type='400'>使手机震动</button>
+    </view>
+  </view>
+  <view class="item">
+    <form bindsubmit="call">
+      <view class="dic">拨打电话</view>
+      <view class="tel">
+        <input placeholder='输入号码' type='number' name="tel" />
+      </view>
+      <view class="info">
+        <button type="primary" form-type='submit'>拨号</button>
+      </view>
+    </form>
+  </view>
+  <view class="item">
+    <view class="dic">添加联系人</view>
+    <view class="info">
+      <button type="primary" bindtap='stopwifi'>添加联系人</button>
+    </view>
+  </view>
+  <view class="item">
+    <view class="dic">手机电量情况</view>
+    <view class="info">
+      <button type="primary" bindtap='elect'>获取电量</button>
+    </view>
+    <view class="content" wx:if="{{elect}}">
+      电量：{{elect.level}}% 是否充电：{{elect.isCharging?'充电':'未充电'}}
+    </view>
+  </view>
+  <view class="item">
+    <view class="dic">设置用户截屏监听</view>
+    <view class="info">
+      <button type="primary" bindtap='screenSave'>设置</button>
+    </view>
+  </view>
+</view>

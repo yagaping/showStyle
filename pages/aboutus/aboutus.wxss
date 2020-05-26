@@ -1,0 +1,65 @@
+/* pages/aboutus/aboutus.wxss */
+page,.main{
+  height: 100%;
+}
+.mc{
+  height: 68%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.mc .logo{
+  text-align: center;
+}
+.mc .logo .img{
+overflow:hidden;
+}
+.mc .logo .img image{
+  display: block;
+  width:150rpx;
+  height: 150rpx;
+  margin: 0 auto;
+}
+.mc .logo .wd{
+  padding-top:30rpx;
+  font-size:28rpx;
+  font-weight: bold;
+}
+.mc .logo .wd .p{
+  font-size:24rpx;
+  color:#666;
+  padding-top:5rpx;
+  font-weight:normal;
+}
+.main .item{
+  display: flex;
+  height: 80rpx;
+  background: #fff;
+  align-items: center;
+  padding:0 20rpx;
+  font-size:26rpx;
+}
+.main .item .text{
+  flex:1;
+  display: flex;
+  justify-content: space-between;
+}
+.main .item .iconfont{
+  font-size:34rpx;
+  margin-top:-4rpx;
+  color:#bbb;
+}
+.foot{
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  text-align: center;
+  padding:0 0 50rpx;
+}
+.foot .tx{
+  padding:5rpx 0;
+  font-size:28rpx;
+  color:#808080;
+}

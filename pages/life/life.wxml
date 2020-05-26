@@ -1,0 +1,121 @@
+<!--pages/health/health.wxml-->
+<import src="../../template/feature/feature.wxml" />
+<view class='main'>
+  <swiper indicator-dots="{{indicatorDots}}" indicator-color="rgba(225,225,225,.5)" indicator-active-color="#ed7d32" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular>
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" style="width:100%;height:150px;" mode='aspectFill' bindtap='banner' data-url="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="content">
+    <view class="more">
+      <swiper style='height:{{ulHieight}}px;' bindanimationfinish="tabChange">
+        <swiper-item>
+          <template is="feature_1" data="{{...tempData}}"></template>
+        </swiper-item>
+        <swiper-item>
+          <template is="feature_2" data="{{...tempData}}"></template>
+        </swiper-item>
+      </swiper>
+      <view class="liner">
+        <view class="tag {{tabIndex==0?'act':''}}"></view>
+        <view class="tag {{tabIndex==1?'act':''}}"></view>
+      </view>
+    </view>
+    <view class="special">
+      <view class="spe_tit">精选APP专场</view>
+      <view class="spe_info">
+        <view class="zt" wx:for="{{appImgs}}" wx:key="index">
+          <image src="{{item}}" mode='widthFix'></image>
+        </view>
+      </view>
+    </view>
+    <view class="adv">
+      <swiper style="height:80px" circular autoplay indicator-dots indicator-color="rgba(225,225,225,.5)" indicator-active-color="#fff">
+        <block wx:for="{{banner}}" wx:key="index">
+          <swiper-item>
+            <image src="{{item}}" mode='aspectFit' style="width:100%;height:80px;"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="hot">
+      <view class="tit">
+        <view class="tit_l">
+          超值抢购
+          <text>距离抢 {{countDown}}</text>
+        </view>
+        <view class="tit_r">
+          更多
+          <icon class="iconfont icon-enter "></icon>
+        </view>
+      </view>
+      <view class="info">
+        <view class="child" wx:for="{{hots}}" wx:key="index">
+          <image src="{{item.src}}" mode='aspectFill'></image>
+          <view class="wd">
+            <view class="t_1">{{item.tit1}}</view>
+            <view class="t_2">{{item.tit2}}</view>
+            <view class="t_3">{{item.price1}}元
+              <text>{{item.price2}}元</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="recom">
+      <view class="tit">
+        <view class="tit_l">
+          推荐商家
+        </view>
+        <view class="tit_r">
+          <image src="{{icoMore}}" class="icoMore" mode='aspectFit'></image>
+          <icon class="iconfont icon-enter "></icon>
+        </view>
+      </view>
+      <view class="info">
+        <view class="big">
+          <image src="{{tj_big}}" mode='aspectFill'></image>
+        </view>
+        <view class="small">
+          <view class="can">
+            <image src="{{tj_m1.src}}" mode='aspectFill'></image>
+            <view class="t1">{{tj_m1.t1}}</view>
+            <view class="t2">{{tj_m1.t2}}</view>
+            <view class="price">{{tj_m1.price}}元</view>
+          </view>
+        </view>  
+      </view>
+      <view class="info info2">
+        <view class="small child" wx:for="{{tj_m2}}" wx:key="index">
+          <view class="can">
+           <image src="{{item.src}}" mode='aspectFill'></image>
+            <view class="t1">{{item.t1}}</view>
+            <view class="t2">{{item.t2}}</view>
+            <view class="price">{{item.price}}元 <text>{{item.price2}}元</text></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="nearby">
+      <view class="tit">
+        <view class="tit_l">附近商家 <text>美食，尽在掌握。</text></view>
+      </view>
+      <view class="list">
+        <view class="item" wx:for="{{nearby}}" wx:key="index">
+          <image src="{{item.url}}" mode='aspectFill' class="img"></image>
+          <view class="text">
+            <view class="tit">{{item.name}}</view>
+            <view class="pop">
+              <view class="rq">人气{{item.pop}} <text class="iconfont icon-fire-fill" wx:for="{{item.fire}}" wx:key="index"></text></view>
+              <view class="jl">{{item.distance}}</view>
+            </view>
+            <view class="type"><text wx:for="{{item.type}}" wx:key="index" wx:for-item="type">{{type}}</text></view>
+            <view class="address"><icon class="iconfont icon-location"></icon>{{item.address}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="main">
+  <form bindsubmit="formSubmit">
+    <view class="information">
+      <view class="describe">
+        <textarea placeholder="写下你想要说的..." placeholder-class='placeholder' maxlength="140" auto-focus name="rich"></textarea>
+      </view>
+      <view class="tel">
+        <input placeholder="写下你的联系方式（QQ、手机号、邮箱）" placeholder-class='placeholder' name="tel"/>
+      </view>
+    </view>
+    <view class="submit">
+      <button form-type="submit">提交</button>
+    </view>
+    <view class="tips">
+      欢迎加入米橙提醒QQ群：
+      <text style="color:#f2842b">723967046</text>
+    </view>
+  </form>
+</view>

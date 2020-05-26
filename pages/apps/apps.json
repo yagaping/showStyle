@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": false,
+  "backgroundTextStyle":"dark",
+  "navigationBarTextStyle":"black",
+  "navigationStyle": "custom",
+  "navigationBarTitleText": ""
+}

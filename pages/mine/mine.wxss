@@ -1,0 +1,151 @@
+/* pages/me/me.wxss */
+page{
+  background: #f6f6f8;
+}
+.main{
+  overflow: hidden
+}
+.main .hdbg{
+  width: 100%;
+  height: 400rpx;
+  background-size:cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* justify-content: center; */
+}
+.main .hdbg .btn_photo{
+  position: absolute;
+  width: 38rpx;
+  height:38rpx;
+  top:10rpx;
+  left:10rpx;
+  color:#fff;
+}
+.main .hdbg .iconfont{
+  color:#fff;
+  font-size:38rpx;
+  margin:0;
+} 
+.main .hdbg .btn_set{
+  position: absolute;
+  width: 38rpx;
+  height: 38rpx;
+  top:10rpx;
+  right:10rpx;
+  color:#fff;
+}
+.main .person{
+  text-align: center;
+  flex:1
+}
+.main .person .head{
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.main .person .head image{
+  width:100%;
+  height: 100%; 
+  display: block;
+}
+.main .person .name{
+  color:#fff;
+  font-size:28rpx;
+  line-height: 40rpx;
+}
+.feature{
+  overflow: hidden;
+  padding-top:30rpx;
+}
+.feature .item{
+  display: flex;
+  align-items:center; 
+  justify-items: center;
+  height:80rpx;
+  line-height: 80rpx;
+  padding-left:15rpx;
+  background: #fff;
+  position: relative;
+  }
+.feature .item:before{
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #e7e7e7;
+  content: "";
+  clear: both;
+  bottom:0;
+  left:15rpx;
+  overflow: hidden;
+}
+.feature .item.last{
+  border-bottom:none;
+  margin-bottom:30rpx;
+}
+.feature .item.last:before{
+  height:0;
+}
+.flex{
+  display: flex;
+  justify-content : space-between;
+}
+.feature .item .text{
+  flex:1;
+  font-size: 28rpx;
+}
+.icon{
+  padding:0 10rpx 0 0;
+}
+.feature .iconfont{
+  font-size:38rpx;
+  margin-top:5rpx;
+}
+.icon-right{
+  color:#d8d8d8;
+  font-size:30rpx;
+}
+.icon-safetycertificate{
+  color:#6ab49d;
+}
+.icon-setup{
+  color:#6098b9;
+}
+.icon-share{
+  color:#58ac92;
+}
+.icon-evaluate{
+  color:#e8a686;
+}
+.icon-setup{
+  color:#4e98c9
+}
+.icon-prompt{
+  color:#5baa97
+}
+
+.sharre_mark{
+ background:rgba(0,0,0,.5);
+ width:100%;
+ height: 100%;
+ position: fixed;
+ top:0;
+ left:0;
+ right:0;
+ bottom: 0;
+ z-index:99;
+}
+.share{
+  position: fixed;
+  width:100%;
+  left:0;
+  right:0;
+  bottom:-100px;
+  background:#fff;
+  height: 100px;
+  z-index:100;
+}

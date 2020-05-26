@@ -1,0 +1,26 @@
+<!--pages/aboutus/aboutus.wxml-->
+<view class='main'>
+  <view class="mc">
+    <view class="logo">
+      <view class="img">
+        <image src="{{imgs.logo}}" mode='widthFix'></image>
+      </view>
+      <view class="wd">
+        <view class="h3">米橙</view>
+        <view class="p">2.6.3</view>
+      </view>
+    </view>
+  </view>
+  <view class="item" bindtap='agrement'>
+    <view class="text">
+      <text>用户协议</text>
+    </view>
+    <view class="icon">
+      <icon class="iconfont icon-right"></icon>
+    </view>
+  </view>
+  <view class="foot">
+    <view class="tx t_1">用米橙，不忘事</view>
+    <view class="tx t_2">wwww.mc.cn</view>
+  </view>
+</view>

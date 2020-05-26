@@ -1,0 +1,84 @@
+/* pages/search/serach.wxss */
+@import '../../template/list/list.wxss';
+.main{
+  overflow: hidden;
+}
+.search{
+  background: #ee8733;
+  padding:12rpx 15rpx;
+  display: flex;
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  z-index:99;
+}
+.search .can{
+  background: #fff;
+  padding:0 56rpx;
+  position: relative;
+  height: 56rpx;
+  border-radius: 5rpx;
+  flex:1;
+}
+.search .can input{
+  height: 100%;
+  display: block;
+  width: 100%;
+  font-size:24rpx;
+}
+.search .can .ico_s{
+  position: absolute;
+  top:7px;
+  left:16rpx;
+}
+.search .can .ico_x{
+   position: absolute;
+  top:7px;
+  right:16rpx;
+}
+.search .cancel{
+  color:#fff;
+  width:70rpx;
+  padding-left:10rpx;
+  text-align: center;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size:28rpx;
+}
+.content{
+  overflow: hidden;
+  padding-top:44px;
+  background: #fff;
+}
+.content .history .tit{
+  font-size:26rpx;
+  color:#999;
+  line-height: 1.6;
+  padding:20rpx 20px 10rpx;
+}
+.content .history .info{
+  overflow: hidden;
+  display: flex;
+  flex-wrap:wrap; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:20rpx;
+}
+.content .history .info .text{
+  flex-grow: 1;
+  font-size:26rpx;
+  padding:10rpx 20rpx;
+  line-height: 1.6;
+  text-align: center;
+  background: #F5F5F5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin:0 20rpx 20rpx 0;
+}
+.content .history .info .text.hot{
+      border-color: rgba(255,0,0,0.2);
+    background-color: rgba(255,0,0,0.04);
+    color: rgb(255,0,0);
+}

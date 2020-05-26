@@ -1,0 +1,53 @@
+<!--pages/account/account.wxml-->
+<import src="../../template/alert/alert" />
+<view class="main">
+  <view class="item itemLine" bindtap='showAlert'>
+    <view class="text">
+      <text>手机号</text>
+      <text style="color:#666">未绑定</text>
+    </view>
+    <view class="icon">
+      <icon class="iconfont icon-right"></icon>
+    </view>
+  </view>
+  <view class="item">
+    <view class="text">
+      <text>登录密码</text>
+      <text style="color:#666">未设置</text>
+    </view>
+    <view class="icon">
+      <icon class="iconfont icon-right"></icon>
+    </view>
+  </view>
+  <view style="height:30rpx"></view>
+  <view class="item itemLine" data-id='0' bindtap='bindContact'>
+    <view class="text">
+      <text>微信</text>
+      <text style="color:#666">Empyrean</text>
+    </view>
+    <view class="icon">
+      <icon class="iconfont icon-right"></icon>
+    </view>
+  </view>
+  <view class="item itemLine" data-id='1' bindtap='bindContact'>
+    <view class="text">
+      <text>QQ</text>
+      <text style="color:#666">BelieveLong</text>
+    </view>
+    <view class="icon">
+      <icon class="iconfont icon-right"></icon>
+    </view>
+  </view>
+  <view class="item" data-id='2' bindtap='bindContact'>
+    <view class="text">
+      <text>新浪微博</text>
+      <text style="color:#666">晴空窗外</text>
+    </view>
+    <view class="icon">
+      <icon class="iconfont icon-right"></icon>
+    </view>
+  </view>
+  <view style="height:30rpx"></view>
+  <view class="logOut">退出登录</view>
+  <template is="alert" data="{{...alertData}}"></template>
+</view>
